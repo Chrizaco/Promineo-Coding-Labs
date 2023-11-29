@@ -1,0 +1,155 @@
+/* ---ELEMENT SELECTORS--- */
+
+html {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
+}
+/* I targeted the body section of the html by using the body 
+tag and curly braces to give an overall margin of 1 rem. */
+body {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+/* I added drop-shadow filter to the title with x and y offset of 
+2 px, blur of 1 px and hex number color */
+title {
+  filter: drop-shadow(2px, 2px, 1px, #0f6a9e);
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  margin: 4rem auto 1rem auto;
+  text-align: center;
+}
+/* Using the p,ul, and ol selectors in one group, the font-size 
+of 20 px can be applied to all at the same time */
+p,
+ul,
+ol {
+  font-size: 20px;
+}
+
+ol {
+  padding: 20px;
+}
+
+ol li {
+  padding: 10px 0;
+}
+/* Using the image tag, a margin of 1 rem is applied to all sides.
+Then a border radius of 1 rem was added. And finally a box shadow
+with an x and y offset and blur of 2px is added followed by the hex color 
+code and a transparency of 0.5  */
+img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px, 2px, 2px, 1rem rgba(black), 0.5;
+}
+/* An additional font-color with an rgb reading was added to
+the figcaption selector. I also decided to center the text.*/
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(0, 58, 66);
+  text-align: center;
+}
+/* Under the footer selector, an additional 
+property of text-align was added */
+footer {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+/* ---CUSTOM CLASS NAME SELECTORS--- */
+/* I added a flex-flow: column attribute to move
+the figcaption under the image */
+.banner-div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+#banner-long {
+  max-width: 100%;
+  height: auto;
+}
+/* In the id selctor for banner short I added a
+display of none  */
+#banner-short {
+  display: none;
+  width: 230px;
+}
+/* I added a property of justify-content set to
+apace evenly for the images in the .imgdiv class */
+.img-div {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.tips-div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+.top-places-div {
+  max-width: 800px;
+  margin: 5rem auto;
+  color: rgb(253, 197, 132);
+  padding: 1rem 2rem;
+}
+/* I added a background-color and a border radius
+ to the top place div */
+.top-places-div h2 {
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: lighter;
+  background-color: rgb(0, 58, 66);
+  border-radius: 1rem;
+}
+
+/* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
+
+@media only screen and (max-width: 1500px) {
+  .img-div img {
+    width: 420px;
+  }
+}
+/* In this section I added a display set to flex with the wrap
+function and adjusted the justify-content section to center so that 
+when the screen decreases size it centers and aligns the text
+under the image. */
+@media only screen and (max-width: 1100px) {
+  .tips-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 1rem;
+  }
+  p,
+  li {
+    font-size: 16px;
+  }
+  .img-div img {
+    width: 230px;
+  }
+  .tips-div img {
+    width: 230px;
+  }
+  /* #banner-long { I wasn't able to figure out how to switch banners
+    when the screen size changed.
+  }
+  #banner-short {
+  } */
+}

@@ -1,0 +1,178 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Breeds</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+
+  <!----- SECTION 1 ----->
+<!-- Background color was changed to gray with .bg-secondary in the class -->
+  <body class="bg-secondary">
+    <div id="main-container" class="container pt-2 pb-5">
+      <div>
+        <img
+          src="Images/banner.png
+"
+          class=".img-fluid"
+          alt="Page banner art of paws, dog bones, and cartoon dogs."
+          width="2000"
+        />
+      </div>
+<!-- I added a class margin bottom of 5 which equals a $spacer of 3 and centered the text  -->
+      <h1
+        class=".mb-5 text-center"
+        {
+        margin-bottom:
+        ($spacer
+        *
+        3)
+        !important;
+        }
+      >
+        Dog Breeds
+      </h1>
+
+      <!----- SECTION 2 ----->
+
+      <div class="bg-light mb-5 fs-5">
+        <p>
+          When selecting a dog to adopt, it's important to consider the
+          different breeds and their characteristics to find the best fit for
+          your lifestyle. For example, if you have a small living space and
+          limited time for exercise, a small dog breed like a Chihuahua or
+          Pomeranian may be a good fit. On the other hand, if you have a large
+          yard and enjoy long walks, a large breed like a Labrador Retriever or
+          German Shepherd may be a better choice.
+        </p>
+        <p>
+          Size isn't the only factor to consider when selecting a dog breed.
+          It's also important to research their specific personality traits,
+          grooming needs, and potential health issues to ensure that you're
+          choosing a breed that will be a good match for your lifestyle and
+          family.
+        </p>
+      </div>
+      
+
+      <div class="container mt-5 mb-5 p-5">
+        <!----- SECTION 3 ----->
+        <div class="container">
+        <div id="small-dog" class="container mb-5 p-5 fs-5">
+          <div class="row"><h3>Small Breeds</h3></div>
+
+          <div class="row">
+            <div class="col-lg-2">Dachshund</div>
+            <div class="col-lg-2">Pug</div>
+            <div class="col-lg-2">Jack Russell Terrier</div>
+            <div class="col-lg-2">Pomeranian</div>
+            <div class="col-lg-2">Beagle</div>
+            <div class="col-lg-2">Maltese</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2">Yorkshire Terrier</div>
+            <div class="col-lg-2">Corgi</div>
+            <div class="col-lg-2">French Bulldog</div>
+            <div class="col-lg-2">Shih Tzu</div>
+            <div class="col-lg-2">Miniature pincher</div>
+            <div class="col-lg-2">Chihuaha</div>
+          </div>
+        </div>
+
+        <!----- SECTION 4 ----->
+<!-- I changed the col md number to 4 for each div class. -->
+        <div id="medium-dog" class="container mb-5 p-5 fs-4">
+          <div class="row"><h3>Medium Breeds</h3></div>
+
+          <div class="row">
+            <div class="col-md-4">Border Collie</div>
+            <div class="col-md-4">Boxer</div>
+            <div class="col-md-4">Boston Terrier</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">Bulldog</div>
+            <div class="col-md-4 ">Cocker Spaniel</div>
+            <div class="col-md-4 ">Siberian Husky</div>
+          </div>
+        </div>
+
+        <!----- SECTION 5 ----->
+
+        <div id="large-dog" class="container mb-5 p-5 fs-3 ">
+          <div class="row"><h3>Large Breeds</h3></div>
+<!-- Once again I changed the column medium to 6 for all div classes. -->
+          <div class="row p-1">
+            <div class="col-md-6">Golden Retriever</div>
+            <div class="col-md-6 ">Great Dane</div>
+            <div class="col-md-6 ">German Shepherd</div>
+            <div class="col-md-6 ">Rottweiler</div>
+          </div>
+        </div>
+      </div>
+
+      <!----- SECTION 6 ----->
+<!-- In this section I commented out the href and replaced it with a class of button button-outline info -->
+      <div class="container text-center mb-5 fs-2">
+        <div class="row">
+          <div class="card-1 col-md-4">
+            <div id="card-1" class=".bg-secondary ">
+              <img
+                src="Images/retriever.jpg"
+                class="card-img-top"
+                alt="Close up of Golden Retriever sitting on grass."
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Golden Retriever</h5>
+                <button type="button" class="btn btn-outline-info">More Info</button>
+                <!-- <a href="#" class="btn btn-dark btn-lg"></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card-2 col-md-4">
+            <div id="card-2" class=".bg-secondary ">
+              <img
+                src="Images/dane.jpg"
+                class="card-img-top"
+                alt="Greate Dane sitting next to body of water."
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Great Dane</h5>
+                <button type="button" class="btn btn-outline-info">More Info</button>
+                <!-- <a href="#" class="btn btn-dark btn-lg">More Info</a> -->
+              </div>
+            </div>
+          </div>
+<!-- I added a card class and col-md-4 to the div class. -->
+          <div class="card-3 col-md-4">
+            <div id="card-3" class=".bg-secondary ">
+              <img
+                src="Images/shepard.jpg"
+                class="card-img-top"
+                alt="German Shepard sitting on fall leaves and grass."
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">German Shepherd</h5>
+                <button type="button" class="btn btn-outline-info">More Info</button>
+                <!-- <a href="#" class="btn btn-dark btn-lg">More Info</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- I added a text-center attribute to the footer -->
+      <!----- SECTION 7 ----->
+      <footer class="text-center">Promineo Tech ©️2023</footer>
+    </div>
+  </body>
+</html>
